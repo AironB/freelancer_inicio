@@ -9,6 +9,11 @@
 html
 {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before, *:after
+{
+    box-sizing: inherit ;
 }
 body
 {
@@ -26,7 +31,7 @@ body
 }
 .contenedor
 {
-    width: 120rem;
+    max-width: 120rem;
    /*
     margin-top: 0;
     margin-right: auto;
@@ -43,10 +48,14 @@ body
 .navegacion-principal
 {
     display:flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 .navegacion-principal a
 {
+    display:flex;
+    justify-content: space-between;
      color:var(--blanco);
      /*Esta linea de text-decoration: none nos sirve para quitarle la linea del enlace*/
      text-decoration: none;
@@ -60,7 +69,35 @@ body
     background-color: var(--primario);
     color:var(--oscuro)
 }
+.hero{
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
+}
+@media (min-width: 480px/*esdta resolucion sirve para un telefono celular*/)  
+{
+    .navegacion-principal
+{  
+     display: block;
+     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-between;
+    align-items: center;
 
+}
+}
+@media (min-width: 768px/*esdta resolucion sirve para una tablet*/)  
+{
+    .navegacion-principal
+{
+   flex-direction: row;
+  
+}
+}
 /*
 esta parte sirve para hacer responsivos los sitios web
 */
