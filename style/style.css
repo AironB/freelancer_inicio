@@ -40,11 +40,27 @@ body
 {
     background-color: var(--secundario);
 }
+.navegacion-principal
+{
+    display:flex;
+    justify-content:space-between;
+}
 .navegacion-principal a
 {
- background-color: var(--primario);
-}/*
-p
+     color:var(--blanco);
+     /*Esta linea de text-decoration: none nos sirve para quitarle la linea del enlace*/
+     text-decoration: none;
+     font-size: 2rem;
+     font-weight: 700;
+     padding: 1rem;
+     
+}
+.navegacion-principal a:hover
 {
-    
-} */
+    background-color: var(--primario);
+    color:var(--oscuro)
+}
+
+/*
+esta parte sirve para hacer responsivos los sitios web
+*/
