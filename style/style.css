@@ -20,10 +20,19 @@ body
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
-.titulo
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3
+{
+    font-size: 1.8rem;
+}
+h1,h2,h3
 {
     text-align: center;
-    font-size: 3.8rem;
 }
 .titulo span
 {
@@ -74,7 +83,27 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
+   
+    position: relative;
+}
+.contenido-hero
+{
+    position: absolute;
+    /*esta parte nos sirve para poner el cuadro transparente sobre la imagen*/
+    background-color: rgba(0, 0, 0, 0.7);/*sintaxis anterior*/
+    background-color: rgb(0, 0, 0, 70%)/*sintaxis nueva esta no esta soportada por todos los navegadores*/;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-hero h2,
+.contenido-hero p
+{
+color: var(--blanco);
 }
 @media (min-width: 480px/*esdta resolucion sirve para un telefono celular*/)  
 {
