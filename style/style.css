@@ -138,6 +138,7 @@ color: var(--blanco);
     align-items: center;
     justify-content: center;
 }
+
 @media (min-width: 480px/*esdta resolucion sirve para un telefono celular*/)  
 {
     .navegacion-principal
@@ -160,7 +161,17 @@ color: var(--blanco);
   
 }
 }
-
+@media (min-width:768px){
+    .servicios
+{
+    display: grid;
+   /* grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 800px;*/
+   /* grid: 200px 800px /300px 300px;*/
+   /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+   grid-template-columns: repeat(3, 1fr);
+}
+}
 /*
 esta parte sirve para hacer responsivos los sitios web
 */
