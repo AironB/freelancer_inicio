@@ -63,7 +63,7 @@ h1,h2,h3
     width: 90%;
     text-align: center;
 }
-@media(min-width:768px) {
+@media(min-width:480px) {
     .button{
         width: auto;
     }
