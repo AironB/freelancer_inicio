@@ -172,6 +172,26 @@ color: var(--blanco);
    grid-template-columns: repeat(3, 1fr);
 }
 }
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3 {
+    color: var(--secundario);
+}
+.servicio p{
+    line-height: 2;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*
 esta parte sirve para hacer responsivos los sitios web
 */
